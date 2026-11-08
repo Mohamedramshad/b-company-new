@@ -824,7 +824,7 @@ footer span {color:var(--orange);}
    <h3 style="margin-bottom:10px;">SPONSORSHIP ENQUIRY</h3>
     <p class="sponsor-form-note">Complete the form and our team will get in touch about Season 1 partnership opportunities.</p>
 
-   <form action="mailto:bcompanyfitness@gmail.com" method="post" enctype="text/plain">
+   <form id="sponsorEnquiryForm">
 
     <input type="text" name="Company Name" placeholder="Company Name" required>
 
@@ -846,7 +846,7 @@ footer span {color:var(--orange);}
 
     <textarea name="Message" placeholder="Tell us about your sponsorship interest"></textarea>
 
-     <a class="btn whatsapp-final" href="https://wa.me/97336900617?text=Hello%20B%20Company%2C%20I%E2%80%99m%20interested%20in%20B%20-%20CAUSE%20WE%20WALK%20Season%201%20and%20would%20like%20to%20know%20more." target="_blank" rel="noopener">ENQUIRE ON WHATSAPP ↗</a>
+     <button class="btn whatsapp-final" type="submit">SUBMIT ENQUIRY ON WHATSAPP ↗</button>
 
    </form>
   </div>
@@ -862,6 +862,31 @@ footer span {color:var(--orange);}
   <p style="margin-top:20px;">© 2026 B Company Fitness. All Rights Reserved.</p>
  </div>
 </footer>
+
+<script>
+  document.getElementById('sponsorEnquiryForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+    if (!this.reportValidity()) return;
+
+    const formData = new FormData(this);
+    const message = [
+      'Hello B Company, I would like to enquire about sponsoring B-CAUSE WE WALK.',
+      '',
+      'Company Name: ' + (formData.get('Company Name') || ''),
+      'Contact Person: ' + (formData.get('Contact Person') || ''),
+      'Email: ' + (formData.get('Email') || ''),
+      'Contact Number: ' + (formData.get('Phone') || ''),
+      'Partnership Interest: ' + (formData.get('Partnership Interest') || ''),
+      'Message: ' + (formData.get('Message') || 'Not provided'),
+      '',
+      'Event Date: Friday, 4 December 2026',
+      'Event Time: 6:00 AM – 8:00 AM'
+    ].join('\n');
+
+    const whatsappUrl = 'https://wa.me/97336900617?text=' + encodeURIComponent(message);
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+  });
+</script>
 
 </body>
 </html>
