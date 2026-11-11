@@ -242,7 +242,7 @@ nav {
 /* SPONSORSHIP */
 .sponsor-section {background:var(--light);color:#151515;}
 .sponsor-section .section-intro {color:#666;}
-.sponsor-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.sponsor-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;align-items:stretch;}
 .sponsor-card {
   padding:30px;
   background:white;
@@ -250,6 +250,14 @@ nav {
   border-radius:12px;
 }
 .sponsor-card.featured {border:2px solid var(--orange);}
+.sponsor-price {font-size:30px;font-weight:900;letter-spacing:-1px;color:var(--orange);margin:4px 0 12px;}
+.sponsor-card {padding:24px 20px;}
+.sponsor-card h3 {font-size:21px;}
+.ad-opportunity-grid {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:35px;}
+.ad-opportunity {background:#1d1d1d;border:1px solid #333;border-top:3px solid var(--orange);border-radius:10px;padding:22px;}
+.ad-opportunity h3 {font-size:17px;margin-bottom:9px;}
+.ad-opportunity p {color:#aaa;font-size:13px;}
+.ad-enquiry-note {color:#aaa;font-size:13px;margin-top:20px;}
 .sponsor-card h3 {font-size:23px;margin:12px 0;}
 .sponsor-card p {color:#666;font-size:14px;margin-bottom:15px;}
 .sponsor-card ul {list-style:none;}
@@ -322,6 +330,7 @@ footer span {color:var(--orange);}
  .stat:nth-child(2) {border:0;}
  .about-grid,.giveaway-grid,.contact-grid {grid-template-columns:1fr;}
  .card-grid,.sponsor-grid {grid-template-columns:1fr 1fr;}
+ .ad-opportunity-grid {grid-template-columns:1fr 1fr;}
  .hero h1 {letter-spacing:-2px;}
 }
 @media(max-width:550px) {
@@ -329,7 +338,7 @@ footer span {color:var(--orange);}
 
  section {padding:65px 0;}
  .container {width:90%;}
- .card-grid,.sponsor-grid,.exposure-grid {grid-template-columns:1fr;}
+ .card-grid,.sponsor-grid,.exposure-grid,.ad-opportunity-grid {grid-template-columns:1fr;}
  .hero {min-height:600px;}
  .hero h1 {font-size:55px;}
  .stats-grid {gap:25px 10px;}
@@ -407,7 +416,7 @@ footer span {color:var(--orange);}
    <a href="#highlights">EVENT</a>
    <a href="#programme">PROGRAMME</a>
    <a href="#sponsorship">SPONSORSHIP</a>
-   <a href="#sponsor-benefits">BENEFITS</a>
+   <a href="#sponsor-benefits">ADVERTISING OPTIONS</a>
   </div>
   <a href="#contact" class="btn nav-cta">BECOME A SPONSOR</a>
  </div>
@@ -627,146 +636,105 @@ footer span {color:var(--orange);}
 <!-- SPONSORSHIP PACKAGES -->
 <section class="sponsor-section" id="sponsorship">
  <div class="container">
-  <div class="eyebrow">05 / PARTNERSHIP OPPORTUNITIES</div>
-  <h2>YOUR BRAND.<br>OUR <span class="orange">MOVEMENT.</span></h2>
+  <div class="eyebrow">05 / SPONSORSHIP PACKAGES</div>
+  <h2>PUT YOUR BRAND<br>IN THE <span class="orange">SPOTLIGHT.</span></h2>
   <p class="section-intro">
-   Become part of a community initiative and position your company
-   in front of a large audience through multiple event touchpoints.
+   Choose a partnership level that matches your brand goals. Each package offers a different combination of on-ground and digital advertising opportunities at B - CAUSE WE WALK.
   </p>
 
   <div class="sponsor-grid">
-
    <div class="sponsor-card featured">
-    <div class="sponsor-tag">TOP PARTNERSHIP</div>
-    <h3>Title Sponsor</h3>
-    <p>Maximum brand prominence across agreed event assets.</p>
+    <div class="sponsor-tag">TOP-TIER PARTNERSHIP</div>
+    <h3>Headline Partner</h3>
+    <div class="sponsor-price">BD 600</div>
+    <p>Maximum brand exposure with premium positioning across the event.</p>
     <ul>
-     <li>Prominent event branding</li>
-     <li>Logo on official event jersey</li>
-     <li>Main stage and backdrop branding</li>
-     <li>Premium flex banner placement</li>
-     <li>Priority event media exposure</li>
-     <li>Featured sponsor listing on the official website</li>
-      <li>Recognition across digital and promotional advertisements</li>
-      <li>Dedicated social media recognition</li>
-     <li>VIP event presence</li>
-     <li>Priority promotional booth</li>
+     <li>Main stage panel branding</li>
+     <li>Entrance gate branding</li>
+     <li>Event T-shirt logo placement</li>
+     <li>Event flag branding</li>
+     <li>Dedicated Instagram promotional post</li>
+     <li>Influencer marketing promotion</li>
+     <li>Special MC spot announcements</li>
+     <li>Company flyer and leaflet distribution</li>
+     <li>Company logo on event LED screens</li>
+     <li>Company name and logo in event promotional materials</li>
     </ul>
    </div>
 
    <div class="sponsor-card">
-    <div class="sponsor-tag">MAJOR PARTNERSHIP</div>
-    <h3>Gold Sponsor</h3>
-    <p>Strong visibility and engagement throughout the event.</p>
+    <div class="sponsor-tag">PREMIUM PARTNERSHIP</div>
+    <h3>Elite Partner</h3>
+    <div class="sponsor-price">BD 250</div>
+    <p>Strong brand visibility through multiple event touchpoints.</p>
     <ul>
-     <li>Logo on selected event materials</li>
-     <li>Event flex branding</li>
-     <li>Website sponsor listing</li>
-      <li>Recognition in selected digital advertisements</li>
-      <li>Social media promotion</li>
-     <li>Event announcement recognition</li>
-     <li>On-ground brand visibility</li>
-     <li>Promotional booth opportunity</li>
+     <li>Main stage panel logo placement</li>
+     <li>Event flag branding</li>
+     <li>Instagram promotional post</li>
+     <li>Event T-shirt logo placement</li>
+     <li>MC spot announcements</li>
+     <li>Company flyer and leaflet distribution</li>
+     <li>Company logo on event LED screens</li>
+     <li>Company name and logo on event social media</li>
+    </ul>
+   </div>
+
+   <div class="sponsor-card">
+    <div class="sponsor-tag">BRAND VISIBILITY</div>
+    <h3>Impact Partner</h3>
+    <div class="sponsor-price">BD 150</div>
+    <p>Build brand awareness through digital and on-ground promotion.</p>
+    <ul>
+     <li>Event flag branding</li>
+     <li>Instagram social media promotion</li>
+     <li>MC spot announcements</li>
+     <li>Company flyer and leaflet distribution</li>
+     <li>Company logo on event LED screens</li>
+     <li>Company name and logo on event social media</li>
     </ul>
    </div>
 
    <div class="sponsor-card">
     <div class="sponsor-tag">SUPPORTING PARTNERSHIP</div>
-    <h3>Silver Sponsor</h3>
-    <p>Support a community event while building brand awareness.</p>
+    <h3>Support Partner</h3>
+    <div class="sponsor-price">BD 100</div>
+    <p>Essential brand recognition while supporting the community event.</p>
     <ul>
-     <li>Logo on selected sponsor displays</li>
-     <li>Website sponsor listing</li>
-      <li>Social media sponsor mention</li>
-     <li>Event day recognition</li>
-     <li>Selected branding opportunities</li>
-     <li>Participation in event activities</li>
+     <li>Company logo on event backdrop</li>
+     <li>Company logo on event LED screens</li>
+     <li>MC spot announcements</li>
+     <li>Company flyer and leaflet distribution</li>
+     <li>Company name and logo in sponsor recognition posts</li>
     </ul>
    </div>
-
   </div>
  </div>
 </section>
 
-<!-- DEDICATED SPONSOR BENEFITS -->
+<!-- INDIVIDUAL ADVERTISING OPPORTUNITIES -->
 <section id="sponsor-benefits">
  <div class="container">
-
-  <div class="eyebrow">06 / EXCLUSIVE SPONSORSHIP BENEFITS</div>
-
-  <h2>ONE EVENT.<br><span class="orange">MULTIPLE BRAND</span><br>OPPORTUNITIES.</h2>
-
+  <div class="eyebrow">06 / INDIVIDUAL ADVERTISING</div>
+  <h2>YOUR BRAND.<br><span class="orange">YOUR SPACE.</span></h2>
   <p class="section-intro">
-   B - CAUSE WE WALK offers sponsors a valuable platform
-   to increase brand awareness, connect with the community and
-   showcase their products and services through multiple promotional
-   opportunities before, during and after the event.
+   Looking for a specific advertising placement? Companies can also enquire about individual branding opportunities without selecting a complete sponsorship package.
   </p>
-
-  <div class="exposure-grid">
-
-   <div class="exposure-card">
-    <h3>👕 Official Jersey Branding</h3>
-    <p>Showcase your company logo on official participant jerseys, creating brand visibility throughout the walkathon.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>📺 TV & Media Advertising</h3>
-    <p>Gain promotional opportunities through planned television advertisements, media coverage and event publicity, subject to confirmed media arrangements.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>🏢 On-Site Flex Advertising</h3>
-    <p>Display your brand through event entrance banners, stage backdrops, registration areas and strategic venue advertising spaces.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>📱 Website, Ads & Social Media</h3>
-    <p>Feature sponsor names and logos on the official event website, promotional advertisements, sponsor announcements, social media posts, reels, stories and event highlights, according to the agreed sponsorship tier.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>🎤 Stage & Event Recognition</h3>
-    <p>Receive brand recognition through event announcements, opening ceremonies, stage displays and sponsor appreciation.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>🏪 Promotional Booth & Activation</h3>
-    <p>Engage directly with participants through product displays, promotional booths, sampling and interactive brand activities.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>✦ Official Website & Advertising</h3>
-    <p>Give sponsors added visibility through logo and name placement on the official event website and approved promotional advertisements, with placement based on the agreed partnership tier.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>🎥 Photography & Video Branding</h3>
-    <p>Benefit from sponsor visibility in event photography, highlight videos and selected post-event promotional content.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>🤝 Community Engagement</h3>
-    <p>Build meaningful connections with approximately 3,000 expected participants, families, businesses and the wider community.</p>
-   </div>
-
-   <div class="exposure-card">
-    <h3>🏅 Certificate Association</h3>
-    <p>Associate your brand with the official participation certificate and celebrate the achievements of eligible participants.</p>
-   </div>
-
+  <div class="ad-opportunity-grid">
+   <div class="ad-opportunity"><h3>01 / Main Stage Panel</h3><p>Prominent company branding on the main stage panel, visible during the event programme.</p></div>
+   <div class="ad-opportunity"><h3>02 / Instagram Post</h3><p>Dedicated social media promotional content featuring your company and brand.</p></div>
+   <div class="ad-opportunity"><h3>03 / Influencer Marketing</h3><p>Brand promotion through influencer-led content and event-related activities.</p></div>
+   <div class="ad-opportunity"><h3>04 / T-Shirt Branding</h3><p>Company logo placement on official event T-shirts worn by participants.</p></div>
+   <div class="ad-opportunity"><h3>05 / Event Flags</h3><p>Display your company branding on flags positioned around the event venue.</p></div>
+   <div class="ad-opportunity"><h3>06 / Spot Announcements</h3><p>Promotional mentions by the event MC during the event programme.</p></div>
+   <div class="ad-opportunity"><h3>07 / Flyers & Leaflets</h3><p>Distribute your company flyers and promotional leaflets to participants and visitors.</p></div>
+   <div class="ad-opportunity"><h3>08 / Entrance Gate</h3><p>Feature your brand at the event entrance and welcome arriving participants.</p></div>
   </div>
-
-  <div style="margin-top:50px;text-align:center;">
-   <h3 style="font-size:28px;margin-bottom:12px;">
-    YOUR BRAND DESERVES THE <span class="orange">SPOTLIGHT.</span>
-   </h3>
-   <p style="color:#aaa;margin-bottom:25px;">
-    Partner with B Company and become part of Bahrain's fitness movement.
-   </p>
-   <a href="#contact" class="btn">DISCUSS SPONSORSHIP</a>
+  <p class="ad-enquiry-note">Individual advertising placements are available by enquiry. Pricing and availability will be confirmed by the event team.</p>
+  <div style="margin-top:42px;text-align:center;">
+   <h3 style="font-size:26px;margin-bottom:12px;">MAKE YOUR BRAND PART OF THE <span class="orange">MOVEMENT.</span></h3>
+   <p style="color:#aaa;margin-bottom:25px;">Contact our team to discuss sponsorship packages and individual advertising placements.</p>
+   <a href="#contact" class="btn">ENQUIRE ABOUT ADVERTISING</a>
   </div>
-
  </div>
 </section>
 
@@ -836,11 +804,18 @@ footer span {color:var(--orange);}
 
     <select name="Partnership Interest" required>
      <option value="">Select Partnership Type</option>
-     <option>Title Sponsor</option>
-     <option>Gold Sponsor</option>
-     <option>Silver Sponsor</option>
-     <option>Media Partner</option>
-     <option>Product / Service Partner</option>
+     <option>Headline Partner - BD 600</option>
+     <option>Elite Partner - BD 250</option>
+     <option>Impact Partner - BD 150</option>
+     <option>Support Partner - BD 100</option>
+     <option>Individual Advertising - Main Stage Panel</option>
+     <option>Individual Advertising - Instagram Post</option>
+     <option>Individual Advertising - Influencer Marketing</option>
+     <option>Individual Advertising - T-Shirt Branding</option>
+     <option>Individual Advertising - Event Flags</option>
+     <option>Individual Advertising - Spot Announcements</option>
+     <option>Individual Advertising - Flyers & Leaflets</option>
+     <option>Individual Advertising - Entrance Gate</option>
      <option>Other</option>
     </select>
 
@@ -869,19 +844,34 @@ footer span {color:var(--orange);}
     if (!this.reportValidity()) return;
 
     const formData = new FormData(this);
+    const submittedAt = new Date().toLocaleString('en-GB', {
+      day: '2-digit', month: 'long', year: 'numeric',
+      hour: '2-digit', minute: '2-digit', hour12: true,
+      timeZone: 'Asia/Bahrain'
+    });
+
     const message = [
-      'Hello B Company, I would like to enquire about sponsoring B-CAUSE WE WALK.',
+      'NEW SPONSORSHIP ENQUIRY – B-CAUSE WE WALK',
       '',
-      'Company Name: ' + (formData.get('Company Name') || ''),
-      'Contact Person: ' + (formData.get('Contact Person') || ''),
-      'Email: ' + (formData.get('Email') || ''),
-      'Contact Number: ' + (formData.get('Phone') || ''),
-      'Partnership Interest: ' + (formData.get('Partnership Interest') || ''),
+      'Enquiry Date & Time: ' + submittedAt + ' (Bahrain Time)',
+      '',
+      'COMPANY DETAILS',
+      'Company Name: ' + (formData.get('Company Name') || 'Not provided'),
+      'Contact Person: ' + (formData.get('Contact Person') || 'Not provided'),
+      'Email Address: ' + (formData.get('Email') || 'Not provided'),
+      'Contact Number: ' + (formData.get('Phone') || 'Not provided'),
+      '',
+      'PARTNERSHIP DETAILS',
+      'Partnership Interest: ' + (formData.get('Partnership Interest') || 'Not selected'),
       'Message: ' + (formData.get('Message') || 'Not provided'),
       '',
+      'EVENT DETAILS',
+      'Event: B-CAUSE WE WALK – Season 1',
       'Event Date: Friday, 4 December 2026',
-      'Event Time: 6:00 AM – 8:00 AM'
-    ].join('\n');
+      'Event Time: 6:00 AM – 8:00 AM',
+      'Location: Bahrain'
+    ].join('
+');
 
     const whatsappUrl = 'https://wa.me/97336900617?text=' + encodeURIComponent(message);
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
